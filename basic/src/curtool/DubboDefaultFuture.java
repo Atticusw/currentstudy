@@ -19,7 +19,7 @@ public class DubboDefaultFuture {
         lock.lock();
         try{
             while (!isDone("")) {
-                done.await();
+                /*done.await();*/
                 long cur = System.nanoTime();
                 if (isDone("") || cur - start > timeout) {
                     break;
@@ -30,7 +30,7 @@ public class DubboDefaultFuture {
             lock.unlock();
         }
         if (!isDone("")) {
-            throw new TimeoutException();
+            /*throw new TimeoutException();*/
         }
        /* return returnFromResponse();*/
         return new Object();
