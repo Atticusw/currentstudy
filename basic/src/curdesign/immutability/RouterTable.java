@@ -1,4 +1,4 @@
-package curtool.immutability;
+package curdesign.immutability;
 
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;

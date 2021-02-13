@@ -1,4 +1,4 @@
-package curtool.immutability;
+package curdesign.immutability;
 
 // immutability 模式
 // 路由信息
